@@ -4,9 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/rodrigo.cespedes/Desktop/quicksort/main.cpp" "C:/Users/rodrigo.cespedes/Desktop/quicksort/cmake-build-debug/CMakeFiles/quicksort.dir/main.cpp.obj"
+  "C:/Users/rodri/OneDrive/Escritorio/templates-pastoruri-master/quicksort/main.cpp" "C:/Users/rodri/OneDrive/Escritorio/templates-pastoruri-master/quicksort/cmake-build-debug/CMakeFiles/quicksort.dir/main.cpp.obj"
+  "C:/Users/rodri/OneDrive/Escritorio/templates-pastoruri-master/quicksort/test.cpp" "C:/Users/rodri/OneDrive/Escritorio/templates-pastoruri-master/quicksort/cmake-build-debug/CMakeFiles/quicksort.dir/test.cpp.obj"
   )
-set(CMAKE_CXX_COMPILER_ID "MSVC")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

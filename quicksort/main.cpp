@@ -1,64 +1,12 @@
 #include <iostream>
 #include <stdio.h>
 #include<vector>
-
+#include "functs.h"
+#define CATCH_CONFIG_MAIN
+#include "catch.hpp"
+#ifndef CATCH_CONFIG_MAIN
 using namespace std;
 
-template <typename T>
-void quickSort(T arr[], int left,int right) {
-    int i = left, j = right;
-    T tmp;
-    T pivot = arr[(left + right) / 2];
-
-    while (i <= j) {
-        while (arr[i] < pivot)
-            i++;
-        while (arr[j] > pivot)
-            j--;
-
-        if (i <= j) {
-            tmp = arr[i];
-            arr[i] = arr[j];
-            arr[j] = tmp;
-            i++;
-            j--;
-        }
-    };
-
-    if (left < j)
-        quickSort(arr, left, j);
-    if (i < right)
-        quickSort(arr, i, right);
-
-}
-
-template <typename T1>
-void quickSort(vector<T1> &arr, int left,int right) {
-    int i = left, j = right;
-    T1 tmp;
-    T1 pivot = arr[(left + right) / 2];
-
-    while (i <= j) {
-        while (arr[i] < pivot)
-            i++;
-        while (arr[j] > pivot)
-            j--;
-
-        if (i <= j) {
-            tmp = arr[i];
-            arr[i] = arr[j];
-            arr[j] = tmp;
-            i++;
-            j--;
-        }
-    };
-
-    if (left < j)
-        quickSort(arr, left, j);
-    if (i < right)
-        quickSort(arr, i, right);
-
-}
 
 
 int main()
@@ -68,16 +16,15 @@ int main()
     for (int i=0;i<4;i++)
         cout<<arr[i]<<endl;
 
-    vector<float> a;
-    a.push_back(2.3);
-    a.push_back(6.9);
-    a.push_back(0);
-    quickSort(a,0,a.size());
+    vector<float> a={1.6,2.4,6.0,0.0};
 
-    for (int i=0;i<a.size();i++)
+    quickSort(a,0,4);
+
+    for (int i=0;i<4;i++)
         cout<<a[i]<<endl;
 
     return 0;
 }
 
 
+#endif
